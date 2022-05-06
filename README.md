@@ -22,7 +22,7 @@ Or you can download the datasets from our [[Train Data]](https://drive.google.co
     git clone https://github.com/JingyiXu404/MCSCNet.git
     ```
 
-step 2 and step 3 can be ignored if you only use BSD68\Urban100\Kodak24\McMaster datasets as testsets (Since we already have them in `dataset/test_data`)
+step 2 and step 3 can be ignored if you only use BSD68\Urban100\Kodak24\McMaster datasets as testsets (Download from our [[Google Drive Link]](https://drive.google.com/drive/folders/1WCs-XR_pxAAsjfTz1cD_Yksrpk4YR-Il?usp=sharing.))
 
 2. Generate `.npy` test datasets from original test data (see guide in dataset/readme.md).
 
