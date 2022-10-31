@@ -57,4 +57,4 @@ If you find our work useful in your research or publication, please cite our wor
 ```
 
 ## 5. Contact
-If you have any question about our work or code, please email `jeremy404@buaa.edu.cn` .
+If you have any question about our work or code, please email `jingyixu@buaa.edu.cn` .
