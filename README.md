@@ -47,7 +47,13 @@ Modify variables `dataset` (line 42 in test.py) and `noise_level` (line 43 in te
 ## 4. Citation
 If you find our work useful in your research or publication, please cite our work:
 ```
-
+@article{xu2022revisiting,
+  title={Revisiting Convolutional Sparse Coding for Image Denoising: From a Multi-scale Perspective},
+  author={Xu, Jingyi and Deng, Xin and Xu, Mai},
+  journal={IEEE Signal Processing Letters},
+  year={2022},
+  publisher={IEEE}
+}
 ```
 
 ## 5. Contact
