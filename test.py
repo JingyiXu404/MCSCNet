@@ -10,7 +10,6 @@ import torch.optim as optim
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
 from torchvision import transforms
-from train_npy import msdataset
 from model import MCSCNet
 from torch.utils.data import DataLoader
 
@@ -20,7 +19,7 @@ import cv2
 import scipy.io as sio
 from test_npy import datatest
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 
 def data_process_npy(data_in,mean,batch):
     data_out=data_in.cpu().numpy().astype(np.float32)
@@ -43,7 +42,7 @@ def test():
     noise_level =15
     test_set = datatest(dataset=dataset,noise_level=noise_level)
     test_loader = DataLoader(test_set, batch_size=1, shuffle=False, num_workers=0)
-    model = MSNet()
+    model = MCSCNet()
     model = model.cuda()
     lr_img = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve',
               'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty', 'twentyone',
@@ -59,7 +58,7 @@ def test():
               'ninety', 'ninetyone', 'ninetytwo', 'ninetythree', 'ninetyfour', 'ninetyfive', 'ninetysix', 'ninetyseven',
               'ninetyeight', 'ninetynine', 'hundred']
 
-    state = torch.load('model/N'+str(noise_level)+'/'+'best.pth') #The name of the pretrained model
+    state = torch.load('model/N'+str(noise_level)+'/'+'best_for_BSD68_and_kodak24.pth') #The name of the pretrained model
     model.load_state_dict(state['model'])
     model.eval()
 
